@@ -1,2 +1,1 @@
-This project is an implementation of Service-Discovery using
-Netflix Eureka in spring boot.
+This project involves the utilization of Netflix Eureka for service discovery and Feign Clients for service-to-service communication within a Spring Boot framework. Two services have been implemented within this project: the StockService and the ProductService. The StockService, which runs on port 8900, is able to provide the quantity of a specific product in stock through the use of a hard-coded value. The ProductService, which runs on port 8901, is able to retrieve and return a Product object, including its product number, name, and stock quantity, by utilizing the StockService through Feign. This allows for seamless communication between the two services.
